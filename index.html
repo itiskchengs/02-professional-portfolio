@@ -11,20 +11,24 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+    <!--Header and Navigation Section-->
     <header>
         <h2>Kenny Cheng</h2>
         <nav>
             <ul>
-                <li><a href="">About Me</a></li>
-                <li><a href="">Work</a></li>
-                <li><a href="">Contact Me</a></li>
+                <li><a href="#about-section">About Me</a></li>
+                <li><a href="#surf-report">Work</a></li>
+                <li><a href="#contact-section">Contact Me</a></li>
                 <li><a href="">Resume</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <!--Hero Image-->
         <div class="hero"></div>
         <article>
+            <a name="about-section"></a>
+            <!--About container-->
             <section class="about-container">
                 <div class="about-heading">
                     <h3>About<br>Me</h3>
@@ -34,34 +38,68 @@
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
                 </div>
             </section>
+            <!--Portfolio Container-->
             <section class="portfolio-container">
                 <div class="portfolio-heading">
                     <h3>Work</h3>
                 </div>
+                <!--First main portfolio image-->
                 <div class="portfolio-image-container">
                     <div class="image-child">
-                        <img src="assets/img/surf-report.jpg" alt="surfing">
+                        <a name="surf-report"><img src="assets/img/surf-report.jpg" alt="surfing"></a>
                         <div class="image-child-text-body">
                             <h4>Surf Report</h4>
                             <p>MERN Stack</p>
                         </div>
                     </div>
+                    <!--Second row of portfolio images-->
                     <div class="image-child-2-container">
-                        <div class="image-child-2">
-                        <img src="assets/img/surf-report.jpg" alt="surfing">
-                        <div class="image-child-text-body">
-                            <h4>Surf Report</h4>
+                        <div class="image-child-2-left">
+                        <img src="assets/img/led.jpg" alt="surfing">
+                        <div class="image-child-text-body-2">
+                            <h4>LED Wall</h4>
+                            <p>Node/IoT</p>
+                        </div>
+                        </div>
+                        <div class="image-child-2-right">
+                            <img src="assets/img/calculator.jpg" alt="surfing">
+                            <div class="image-child-text-body-2">
+                                <h4>Calculator</h4>
+                                <p>React/JavaScript/CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Third row of portfolio images-->
+                    <div class="image-child-3-container">
+                        <div class="image-child-3-left">
+                        <img src="assets/img/puzzel.jpg" alt="surfing">
+                        <div class="image-child-text-body-3">
+                            <h4>Pastel Puzzle</h4>
                             <p>MERN Stack</p>
                         </div>
                         </div>
-                        <div class="image-child-2">
-                            <img src="assets/img/surf-report.jpg" alt="surfing">
-                            <div class="image-child-text-body">
-                                <h4>Surf Report</h4>
-                                <p>MERN Stack</p>
+                        <div class="image-child-3-right">
+                            <img src="assets/img/run-2.jpg" alt="surfing">
+                            <div class="image-child-text-body-3">
+                                <h4>Run Buddy</h4>
+                                <p>HTML/CSS</p>
                             </div>
+                        </div>
                     </div>
                 </div>
+            </section>
+            <!--Contact Container-->
+            <section class="contact-container">
+                <a name="contact-section"></a>
+                <div class="contact-heading">
+                    <h3>Contact<br>Me</h3>
+                </div>
+                <div class="contact-content">
+                    <p>555.555.5555</p>
+                    <p>lernantino@website.com</p>
+                    <p>Github</p>
+                    <p>Twitter</p>
+                    <p>Spotify</p>
                 </div>
             </section>
         </article>
