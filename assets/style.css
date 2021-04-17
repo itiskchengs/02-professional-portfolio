@@ -295,6 +295,8 @@ nav ul li a:hover{
     MEDIA QUERIES 
 =========================*/
 
+/*Larger screen size*/
+
 @media only screen and (max-width: 1450px){
     .about-heading h3{
         font-size: 6rem;
@@ -315,6 +317,8 @@ nav ul li a:hover{
         top: 4.5vw;
     }
 }
+
+/*Large screen size*/
 
 @media only screen and (max-width: 1180px){
 /*ABOUT SECTION*/
@@ -401,6 +405,8 @@ nav ul li a:hover{
     padding: 1rem 8rem 1rem 2rem;
 }
 }
+
+/*Tablet screen size*/
 @media only screen and (max-width: 768px){
     /*NAVIGATION SECTION*/
     header{
@@ -427,6 +433,8 @@ nav ul li a:hover{
         padding: 0rem 0rem;
     }
 }
+
+/*Tablet screen size*/
 
 @media only screen and (max-width: 650px){
 /*NAVIGATION SECTION*/
@@ -507,6 +515,8 @@ nav ul li a{
     align-items: flex-start;
 }
 }
+
+/*Mobile screen size*/
 @media only screen and (max-width: 480px){
     .image-child-text-body{
         top: 8.5vw;
