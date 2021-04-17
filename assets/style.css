@@ -62,6 +62,7 @@ header{
     flex-wrap: wrap;
     align-items: center;
     padding: 2rem 3.5rem;
+    
 }
 header h2{
     color: var(--background);
@@ -98,6 +99,7 @@ nav ul li a:hover{
 .about-container{
     display: flex;
     flex-direction: row;
+    margin-top: 4rem;
 }
 .about-heading{
     flex: 0 0 25%;
@@ -107,7 +109,7 @@ nav ul li a:hover{
     height: 25vh;
 }
 .about-heading h3{
-    font-size: 7rem;
+    font-size: 9rem;
     color: var(--independence);
 }
 .about-content{
@@ -121,7 +123,7 @@ nav ul li a:hover{
 .portfolio-container{
     display: flex;
     flex-direction: row;
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 .portfolio-heading{
     flex: 0 0 25%;
@@ -131,7 +133,7 @@ nav ul li a:hover{
     height: 55vh;
 }
 .portfolio-heading h3{
-    font-size: 7em;
+    font-size: 9em;
     color: var(--independence);
 }
 .portfolio-content{
@@ -154,8 +156,22 @@ nav ul li a:hover{
 }
 .image-child a img{
     border: 6px solid var(--silver);
-    width: 100%;
-    
+    width: 100%; 
+}
+.image-child:hover{
+    transform: scale(1.05);
+}
+.image-child-2-left:hover{
+    transform: scale(1.05);
+}
+.image-child-2-right:hover{
+    transform: scale(1.05);
+}
+.image-child-3-left:hover{
+    transform: scale(1.05);
+}
+.image-child-3-right:hover{
+    transform: scale(1.05);
 }
 .image-child-text-body{
     position: absolute;
@@ -249,17 +265,17 @@ nav ul li a:hover{
 .contact-container{
     display: flex;
     flex-direction: row;
-    margin: 5rem 0rem;
+    margin: 10rem 0rem;
 }
 .contact-heading{
     flex: 0 0 25%;
     text-align: right;
     padding: .5rem 4rem;
     border-right: 4px solid var(--independence);
-    height: 15vh;
+    height: 17vh;
 }
 .contact-heading h3{
-    font-size: 7rem;
+    font-size: 9rem;
     color: var(--independence);
 }
 .contact-content{
@@ -279,19 +295,42 @@ nav ul li a:hover{
     MEDIA QUERIES 
 =========================*/
 
-@media only screen and (max-width: 1180px){
+@media only screen and (max-width: 1450px){
+    .about-heading h3{
+        font-size: 6rem;
+    }
+    .portfolio-heading h3{
+        font-size: 6rem;
+    }
+    .contact-heading h3{
+        font-size: 6rem;
+    }
+    .image-child-text-body{
+        top: 15.5vw;
+    }
+    .image-child-text-body-2{
+        top: 4.5vw;
+    }
+    .image-child-text-body-3{
+        top: 4.5vw;
+    }
+}
 
+@media only screen and (max-width: 1180px){
 /*ABOUT SECTION*/
 .about-container{
     flex-direction: column;
+}
+.about-heading{
+    border-right: none;
 }
 .about-heading h3{
     text-align: left;
     border-bottom: 4px solid var(--independence);
     width: 50%;
     padding-bottom: 1rem;
+    font-size: 5rem;
 }
-
 /*PORTFOLIO SECTION*/
 .portfolio-container{
     flex-direction: column;
@@ -304,12 +343,16 @@ nav ul li a:hover{
     border-bottom: 4px solid var(--independence);
     width: 50%;
     padding-bottom: 1rem;
+    font-size: 5rem;
 }
 .image-child-2-container{
     flex-direction: column;
 }
 .image-child{
     height: 34vw;
+}
+.image-child-text-body{
+    top: 14.5vw;
 }
 .image-child-2-left{
     flex: 0 0 100%;
@@ -320,6 +363,9 @@ nav ul li a:hover{
     flex: 0 0 100%;
     max-width: 100%;
     padding: 1.5rem 0rem;
+}
+.image-child-text-body-2{
+    top: 14.5vw;
 }
 .image-child-3-container{
     flex-direction: column;
@@ -334,18 +380,162 @@ nav ul li a:hover{
     max-width: 100%;
     padding: 1.5rem 0rem;
 }
-
+.image-child-text-body-3{
+    top: 14.5vw;
+}
 /*CONTACT SECTION*/
 .contact-container{
     flex-direction: column;
+}
+.contact-heading{
+    border-right: none;
 }
 .contact-heading h3{
     text-align: left;
     border-bottom: 4px solid var(--independence);
     width: 50%;
     padding-bottom: 1rem;
+    font-size: 5rem;
 }
 .contact-content{
     padding: 1rem 8rem 1rem 2rem;
 }
+}
+@media only screen and (max-width: 768px){
+    /*NAVIGATION SECTION*/
+    header{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    header h2{
+        color: var(--background);
+        text-align: left;
+        align-self: flex-start;
+    }
+    nav{
+        align-self: flex-start;
+    }
+    nav ul li{
+        padding: .5rem 0rem;
+    }
+    nav ul li:first-child{
+        margin-top: 2rem;
+    }
+    nav ul li a{
+        padding: 0rem 0rem;
+    }
+}
+
+@media only screen and (max-width: 650px){
+/*NAVIGATION SECTION*/
+header{
+    flex-direction: column;
+}
+nav ul{
+    flex-direction: column;
+}
+header h2{
+    color: var(--background);
+    text-align: left;
+    align-self: flex-start;
+}
+nav{
+    align-self: flex-start;
+}
+nav ul li{
+    padding: .5rem 0rem;
+}
+nav ul li:first-child{
+    margin-top: 2rem;
+}
+nav ul li a{
+    padding: 0rem 0rem;
+}
+/*ABOUT SECTION*/
+.about-container{
+    margin-top: 2rem;
+}
+.about-heading h3{
+    font-size: 3.5rem;
+}
+.portfolio-container{
+    margin-top: 4rem;
+}
+.portfolio-heading h3{
+    font-size: 3.5rem;
+}
+.contact-heading h3{
+    font-size: 3.5rem;
+}
+.image-child-text-body{
+    top: 12.5vw;
+    padding: .75rem 1.25rem 0rem 1rem;
+}
+.image-child-text-body h4{
+    font-size: 1.75rem;
+}
+.image-child-text-body p{
+    font-size: 1.2rem;
+}
+.image-child-text-body-2{
+    top: 12.5vw;
+    padding: .75rem 1.25rem 0rem 1rem;
+}
+.image-child-text-body-2 h4{
+    font-size: 1.75rem;
+}
+.image-child-text-body-2 p{
+    font-size: 1.2rem;
+}
+.image-child-text-body-3{
+    top: 12.5vw;
+    padding: .75rem 1.25rem 0rem 1rem;
+}
+.image-child-text-body-3 h4{
+    font-size: 1.75rem;
+}
+.image-child-text-body-3 p{
+    font-size: 1.2rem;
+}
+.contact-container{
+    margin: 5rem 0rem;
+}
+.contact-content{
+    flex-direction: column;
+    align-items: flex-start;
+}
+}
+@media only screen and (max-width: 480px){
+    .image-child-text-body{
+        top: 8.5vw;
+        padding: .75rem 1.25rem 0rem 1rem;
+    }
+    .image-child-text-body h4{
+        font-size: 1.5rem;
+    }
+    .image-child-text-body p{
+        font-size: 1rem;
+    }
+    .image-child-text-body-2{
+        top: 8.5vw;
+        padding: .75rem 1.25rem 0rem 1rem;
+    }
+    .image-child-text-body-2 h4{
+        font-size: 1.5rem;
+    }
+    .image-child-text-body-2 p{
+        font-size: 1rem;
+    }
+    .image-child-text-body-3{
+        top: 8.5vw;
+        padding: .75rem 1.25rem 0rem 1rem;
+    }
+    .image-child-text-body-3 h4{
+        font-size: 1.5rem;
+    }
+    .image-child-text-body-3 p{
+        font-size: 1rem;
+    }
 }
