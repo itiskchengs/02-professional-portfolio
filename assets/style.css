@@ -191,10 +191,15 @@ nav ul li a:hover{
     margin-top: 1rem;
     font-size: 1.4rem;
 }
+.image-child-extension a img{
+    width: 3%;
+    border: none;
+}
 /*IMAGE SECTION 2*/
 .image-child-2-container{
     display: flex;
     flex-direction: row;
+    margin-top: 6rem;
 }
 .image-child-2-left{
     position: relative;
@@ -287,10 +292,14 @@ nav ul li a:hover{
     padding: 1rem 8rem 1rem 4rem;
     align-items: center;
 }
-.contact-content p{
+.contact-content p a{
     padding: 1rem 2rem;
     font-size: 1.75rem;
     text-decoration: underline;
+    color: var(--independence);
+}
+.contact-content p a:hover{
+    color: var(--mandarin);
 }
 
 
@@ -481,6 +490,13 @@ nav ul li a{
 .contact-heading h3{
     font-size: 3.5rem;
 }
+.image-child-2-container{
+    margin-top:0.5rem;
+}
+.image-child-extension a img{
+    width: 5%;
+    border: none;
+}
 .image-child-text-body{
     top: 12.5vw;
     padding: .75rem 1.25rem 0rem 1rem;
@@ -522,6 +538,13 @@ nav ul li a{
 
 /*Mobile screen size*/
 @media only screen and (max-width: 480px){
+    .image-child-2-container{
+        margin-top:0rem;
+    }
+    .image-child-extension a img{
+        width: 5%;
+        border: none;
+    }
     .image-child-text-body{
         top: 8.5vw;
         padding: .75rem 1.25rem 0rem 1rem;
@@ -552,4 +575,5 @@ nav ul li a{
     .image-child-text-body-3 p{
         font-size: 1rem;
     }
+    
 }
