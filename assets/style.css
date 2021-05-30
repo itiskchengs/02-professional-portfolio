@@ -79,7 +79,11 @@ nav ul li a{
     font-weight: 600;
 }
 nav ul li a:hover{
-    color: var(--mandarin);
+    color: var(--silver);
+}
+#resume{
+    background: var(--mandarin);
+    padding: 0.2rem 1rem 0.5rem 1rem;
 }
 
 /*=========================
